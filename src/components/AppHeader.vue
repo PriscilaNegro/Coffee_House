@@ -9,6 +9,7 @@
         <a href="#">Menu</a>
         <a href="#">Contato</a>
       </nav>
+
     </div>
   </header>
 </template>
@@ -16,7 +17,7 @@
 <style scoped>
 .header {
   width: 100%;
-  background-color: #1f1f1f;
+  background-color:#3e2723;
   padding: 16px 0;
 }
 
@@ -24,26 +25,45 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
-
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #f5f5f5;
+  color: #f5e9dc;
+}
+
+.nav {
+  margin-left: 120px;
+  display: flex;
+  gap: 80px;
 }
 
 .nav a {
-  margin-left: 20px;
   text-decoration: none;
-  color: #f5f5f5;
+  color: #f5e9dc;
   font-size: 0.95rem;
 }
 
 .nav a:hover {
   opacity: 0.8;
 }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav {
+    margin-left: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+} 
+
 </style>
